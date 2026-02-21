@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Fortnite Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="hud" aria-label="Game HUD">
+      <h1>Mini Fortnite Clone</h1>
+      <p>Move with <kbd>WASD</kbd>, aim with mouse, click to shoot.</p>
+      <p>Press <kbd>Space</kbd> to place a wall and block enemy fire.</p>
+      <div class="stats">
+        <div>Health: <span id="healthValue">100</span></div>
+        <div>Shield: <span id="shieldValue">50</span></div>
+        <div>Materials: <span id="materialsValue">30</span></div>
+        <div>Eliminations: <span id="killsValue">0</span></div>
+        <div>Storm in: <span id="stormTimerValue">0</span>s</div>
+      </div>
+    </section>
+    <canvas id="gameCanvas" width="960" height="540" aria-label="Game canvas"></canvas>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
